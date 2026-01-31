@@ -1,0 +1,45 @@
+{
+  "name": "@luknyb/cipd",
+  "version": "0.1.0",
+  "description": "Cosmos Injected Provider Discovery - A standardized way to discover Cosmos wallet extensions, inspired by EIP-6963",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "cosmos",
+    "wallet",
+    "keplr",
+    "leap",
+    "cosmostation",
+    "provider",
+    "discovery",
+    "eip-6963",
+    "cipd"
+  ],
+  "author": "luknyb",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Swepool/cipd.git"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
